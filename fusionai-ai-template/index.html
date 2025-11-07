@@ -1,0 +1,1386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FusionAI - Template</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/ai-round.png">
+
+  <!-- Include Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta name="description" content="AI powered workflow template - demo layout" />
+</head>
+<body>
+  <!-- ===== Header Section ===== -->
+  <header class="site-header">
+    <div class="site-header__inner container">
+      <a class="site-header__brand" href="#">
+        <img src="assets/images/ai-round.png" alt="logo" class="img-fluid">
+        <strong>Fusion AI</strong>
+      </a>
+      <nav class="site-header__nav" aria-label="Main navigation">
+        <ul class="site-header__menu">
+          <li class="site-header__item"><a href="javascript:void(0)">About us</a></li>
+          <li class="site-header__item"><a href="javascript:void(0)">Pricing</a></li>
+          <li class="site-header__item"><a href="javascript:void(0)">Integration</a></li>
+          <li class="site-header__item"><a href="javascript:void(0)">Blog</a></li>
+          <li class="site-header__item"><a href="javascript:void(0)">Contact</a></li>
+          <li class="site-header__item"><a href="javascript:void(0)">Waitlist</a></li>
+        </ul>
+      </nav>
+
+
+      <!-- <button class="site-header__cta">Get Started</button> -->
+
+      <div class="site-cta">
+        <a href="#">
+          <div class="site-cta__framer-1"></div>
+          <div class="site-cta__framer-2"></div>
+          <div class="site-cta__framer-3"></div>
+          <div class="site-cta__framer-4"></div>
+          <div class="site-cta__started">
+            <div class="site-cta__item">
+              Get Started 
+            </div>
+            <div class="site-cta__item">
+              Get Started 
+            </div>
+          </div>
+        </a>
+      </div>
+
+
+
+      <button class="site-header__toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero" id="home" aria-label="Hero">
+    <div class="hero__video">
+      <video src="assets/images/hero-video.mp4" loop="" preload="auto" muted="" playsinline="" style="cursor:auto;width:100%;height:100%;border-radius:0px;display:block;object-fit:cover;background-color:rgba(0, 0, 0, 0);object-position:50% 50%" autoplay=""></video>
+    </div>
+    <div class="hero__inner container">
+      <div class="hero__content">
+
+        <div class="section-title">
+          <div class="section-title__sub">
+            <div class="section-title__subin">
+              <span>Supercharge Your AI Workflows</span>
+            </div>
+          </div>
+          <div class="section-title__main">
+            <h2>Automate Your AI Workflows with AI Agent</h2>
+          </div>
+          <div class="section-title__content">
+            <p>Connect your favorite apps, set triggers and watch AI handle the rest - no coding required. Get up and running in minutes.</p>
+          </div>
+        </div>
+        <div class="section-cta">
+          <div class="site-cta">
+            <a href="#">
+              <div class="site-cta__framer-1"></div>
+              <div class="site-cta__framer-2"></div>
+              <div class="site-cta__framer-3"></div>
+              <div class="site-cta__framer-4"></div>
+              <div class="site-cta__started">
+                <div class="site-cta__item">
+                  Get Started - Free 
+                </div>
+                <div class="site-cta__item">
+                  Get Started - Free
+                </div>
+              </div>
+            </a>
+            <a href="#" class="site-cta__ghost">
+              <div class="site-cta__started">
+                <div class="site-cta__item">
+                  View Pricing 
+                </div>
+                <div class="site-cta__item">
+                  View Pricing
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+
+        <!-- <p class="hero__eyebrow">Introducing</p>
+        <h1 class="hero__title">Automate Your AI Workflows with AI Agent</h1>
+        <p class="hero__subtitle">Build, scale and manage entire AI workforce with powerful tools for builders and teams.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#features">Get Started</a>
+          <a class="btn btn--ghost" href="#learn">Learn More</a>
+        </div> -->
+
+      </div>
+      <div class="hero__visual" aria-hidden="true">
+        <!-- <div class="device-mockup">
+          <div class="device-mockup__screen">
+            <div class="chat-card">
+              <div class="chat-card__header">Agent • Status</div>
+              <div class="chat-card__body">Hello — ask me to create workflows, integrate apps, and run commands.</div>
+              <div class="chat-card__input">Type a command...</div>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- ===== Chatbox Section ===== -->
+
+<section class="chatbox">
+  <div class="chatbox__svg">
+    <svg width="100%" height="100%" viewBox="0 0 1920 800" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <radialGradient id="orange-glow" cx="0" cy="0.5" r="0.6">
+          <stop offset="0%" stop-color="#d15000" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="blue-glow" cx="1" cy="0.5" r="0.6">
+          <stop offset="0%" stop-color="#0066ff" stop-opacity="1"/>
+          <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+
+      <!-- Left (orange) glow -->
+      <rect width="100%" height="100%" fill="url(#orange-glow)"/>
+
+      <!-- Right (blue) glow -->
+      <rect width="100%" height="100%" fill="url(#blue-glow)"/>
+    </svg>
+  </div>
+
+  <div class="chatbox__container">
+    <div class="chatbox__border"></div>
+
+    <!-- Main content wrapper -->
+    <div class="chatbox__content">
+      
+      <div class="chatbox__header">
+        <button class="chatbox__model-select">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_585_3771)">
+            <path d="M7.65845 11.6425V5.64247L12.3209 2.9508C14.9043 1.45914 19.5293 5.1383 17.5876 8.50497" stroke="white" stroke-linejoin="round"/>
+            <path d="M7.65845 8.72656L12.8543 5.72656L17.5168 8.41823C20.1001 9.9099 19.2251 15.7557 15.3376 15.7557" stroke="white" stroke-linejoin="round"/>
+            <path d="M10.1833 7.26562L15.3792 10.2656V15.6531C15.3792 18.6365 9.87917 20.8031 7.9375 17.4365" stroke="white" stroke-linejoin="round"/>
+            <path d="M12.7083 8.83594V14.7276L8.04581 17.4193C5.46248 18.9109 0.837481 15.2318 2.77915 11.8651" stroke="white" stroke-linejoin="round"/>
+            <path d="M12.7084 11.6385L7.51258 14.6385L2.85008 11.9469C0.262576 10.451 1.13758 4.60938 5.02508 4.60938" stroke="white" stroke-linejoin="round"/>
+            <path d="M10.1834 13.1021L4.98755 10.1021V4.7146C4.98755 1.73127 10.4875 -0.435396 12.4292 2.93127" stroke="white" stroke-linejoin="round"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_585_3771">
+            <rect width="20" height="20" fill="white"/>
+            </clipPath>
+            </defs>
+          </svg>
+          <span class="chatbox__model-name">GPT 4.5</span>
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_589_3845)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.53026 11.7822C9.38962 11.9228 9.19889 12.0018 9.00001 12.0018C8.80114 12.0018 8.61041 11.9228 8.46976 11.7822L4.22701 7.53947C4.15538 7.47028 4.09824 7.38752 4.05894 7.29602C4.01963 7.20452 3.99894 7.1061 3.99808 7.00652C3.99721 6.90693 4.01619 6.80817 4.0539 6.716C4.09161 6.62383 4.1473 6.54009 4.21772 6.46967C4.28814 6.39925 4.37188 6.34356 4.46405 6.30585C4.55622 6.26814 4.65498 6.24916 4.75456 6.25003C4.85415 6.25089 4.95256 6.27158 5.04407 6.31089C5.13557 6.3502 5.21833 6.40733 5.28751 6.47897L9.00001 10.1915L12.7125 6.47897C12.854 6.34235 13.0434 6.26675 13.2401 6.26846C13.4367 6.27017 13.6248 6.34905 13.7639 6.4881C13.9029 6.62716 13.9818 6.81527 13.9835 7.01192C13.9852 7.20856 13.9096 7.39801 13.773 7.53947L9.53026 11.7822Z" fill="white"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_589_3845">
+            <rect width="18" height="18" fill="white"/>
+            </clipPath>
+            </defs>
+          </svg>
+        </button>
+        <button class="chatbox__language-select">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_587_3840)">
+            <path d="M1.25 10C1.25 12.3206 2.17187 14.5462 3.81282 16.1872C5.45376 17.8281 7.67936 18.75 10 18.75C12.3206 18.75 14.5462 17.8281 16.1872 16.1872C17.8281 14.5462 18.75 12.3206 18.75 10C18.75 7.67936 17.8281 5.45376 16.1872 3.81282C14.5462 2.17187 12.3206 1.25 10 1.25C7.67936 1.25 5.45376 2.17187 3.81282 3.81282C2.17187 5.45376 1.25 7.67936 1.25 10Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M6.25 10C6.25 7.67936 6.64509 5.45376 7.34835 3.81282C8.05161 2.17187 9.00544 1.25 10 1.25C10.9946 1.25 11.9484 2.17187 12.6516 3.81282C13.3549 5.45376 13.75 7.67936 13.75 10C13.75 12.3206 13.3549 14.5462 12.6516 16.1872C11.9484 17.8281 10.9946 18.75 10 18.75C9.00544 18.75 8.05161 17.8281 7.34835 16.1872C6.64509 14.5462 6.25 12.3206 6.25 10Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
+            <path d="M1.875 12.9193H18.125M1.875 7.08594H18.125" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_587_3840">
+            <rect width="20" height="20" fill="white"/>
+            </clipPath>
+            </defs>
+          </svg>
+        </button>
+      </div>
+
+      <div class="chatbox__body">
+        <div class="typewriter">
+          <div class="typewriter__wrapper">
+            <span class="typewriter__text"></span>
+            <span class="typewriter__cursor" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="chatbox__footer">
+        <div class="chatbox__actions">
+          <button class="chatbox__button">Chat</button>
+          <button class="chatbox__button">Launch Workflow</button>
+          <button class="chatbox__button">Data Analysis</button>
+        </div>
+        <button class="chatbox__send-btn">
+          <div class="site-cta__framer-1"></div>
+          <div class="site-cta__framer-2"></div>
+          <div class="site-cta__framer-3"></div>
+          <div class="site-cta__framer-4"></div>
+          <span class="chatbox__send-icon"><img src="assets/images/star.png" class="img-fluid"></span>
+          <span class="chatbox__send-text">Send</span>
+        </button>
+      </div>
+
+    </div>
+  </div>
+  <div class="container">
+    <div class="chatbox__dashboard-one">
+      <img src="assets/images/chatbox-dashboard-one.png">
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== Logos Section ===== -->
+
+<section class="partners" aria-label="Partners">
+  <div class="container">
+    <div class="partners__content">
+      <h2 class="partners__title">Trusted by 150,000+ users worldwide</h2>
+      <ul class="partners__list">
+        <li class="partners__item"><img src="assets/images/logo-1.svg" alt=""></li>
+        <li class="partners__item"><img src="assets/images/logo-2.svg" alt=""></li>
+        <li class="partners__item"><img src="assets/images/logo-3.svg" alt=""></li>
+        <li class="partners__item"><img src="assets/images/logo-4.svg" alt=""></li>
+        <li class="partners__item"><img src="assets/images/logo-5.svg" alt=""></li>
+        <li class="partners__item"><img src="assets/images/logo-6.svg" alt=""></li>
+        <li class="partners__item"><img src="assets/images/logo-7.svg" alt=""></li>
+
+        <li class="partners__item"><img src="assets/images/logo-1.svg" alt=""></li>
+        <li class="partners__item"><img src="assets/images/logo-2.svg" alt=""></li>
+        <li class="partners__item"><img src="assets/images/logo-3.svg" alt=""></li>
+        <li class="partners__item"><img src="assets/images/logo-4.svg" alt=""></li>
+        <li class="partners__item"><img src="assets/images/logo-5.svg" alt=""></li>
+        <li class="partners__item"><img src="assets/images/logo-6.svg" alt=""></li>
+        <li class="partners__item"><img src="assets/images/logo-7.svg" alt=""></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ===== Features Section ===== -->
+
+<section id="features" class="features" aria-label="Features">
+  <div class="container">
+    <div class="section-title">
+      <div class="section-title__sub">
+        <div class="section-title__subin">
+          <span>AI-Driven Features</span>
+        </div>
+      </div>
+      <div class="section-title__main">
+        <h2>Build, scale and manage <br> entire AI workforce</h2>
+      </div>
+      <div class="section-title__content">
+        <p>Fusion AI helps you tackle data bottlenecks, streamline analysis, and make <br> smarter decisions with ease.</p>
+      </div>
+    </div>
+
+    <div class="features__grid">
+      
+      <div class="features__item">
+        <div class="features__item-border"></div>
+        <div class="features__item-card">
+          <div class="features__item-image">
+            <img src="assets/images/seamless-integrations.png" alt="Seamless Integrations">
+          </div>
+          <h3 class="features__item-title">Seamless Integrations</h3>
+          <p class="features__item-text">
+            Integrate Slack, HubSpot, Zendesk & more—automate data flow instantly.
+          </p>
+        </div>
+      </div>
+
+      <div class="features__item">
+        <div class="features__item-border" style="inset:-166px -90px -158px -93px; animation: rotate-gradient 10s linear infinite;"></div>
+        <div class="features__item-card">
+          <div class="features__item-image">
+            <img src="assets/images/conversational-actions.png" alt="Conversational Actions">
+          </div>
+          <h3 class="features__item-title">Conversational Actions</h3>
+          <p class="features__item-text">
+            Create records, assign tasks & queue emails with a simple <br> prompt in seconds flat.
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <div class="features__grid grid__row__two">
+
+      <div class="features__item">
+        <div class="features__item-border" style="inset:-166px -90px -158px -93px; animation: rotate-gradient 10s linear infinite;"></div>
+        <div class="features__item-card">
+          <div class="features__item-image">
+            <img src="assets/images/visual-workflow-designer.png" alt="Visual Workflow Designer">
+          </div>
+          <h3 class="features__item-title">Visual Workflow Designer</h3>
+          <p class="features__item-text">
+            Drag & drop AI actions to build workflows visually—<br>no coding required.
+          </p>
+        </div>
+      </div>
+
+      <div class="features__item">
+        <div class="features__item-border"></div>
+        <div class="features__item-card">
+          <div class="features__item-image">
+            <img src="assets/images/multi‑channel-automation.png" alt="Multi-Channel Automation">
+          </div>
+          <h3 class="features__item-title">Multi-Channel Automation</h3>
+          <p class="features__item-text">
+            Trigger email, SMS & chat messages automatically on schedule.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+<!-- ===== AI Powered Section ===== -->
+
+<section class="ai-powered" aria-label="AI Powered Section">
+  <div class="container">
+    
+    <!-- Heading -->
+    <div class="ai-powered__header">
+      <h2 class="ai-powered__title">
+        <span class="ai-powered__logo">
+          <img src="assets/images/ai-round.png" alt="AI Logo">
+          <span class="ai-powered__logo-text">AI</span>
+        </span>
+        <span class="ai-powered__highlight">Powered</span>
+      </h2>
+    </div>
+
+    <!-- Main Chat Interface -->
+    <div class="ai-powered__interface">
+      <div class="ai-powered__sidebar">
+        <img src="assets/images/chatbox-dashboard-two.png">
+      </div>
+
+      <div class="ai-powered__chat">
+        <div class="ai-powered__messages">
+          <div class="ai-powered__message ai-powered__message--user">
+            <div class="ai-powered__message-icon">
+              <img src="assets/images/user-icon.png" alt="User">
+            </div>
+            <div class="ai-powered__message-text" data-text="Hey, can you generate a customer follow-up list"></div>
+          </div>
+
+          <div class="ai-powered__message ai-powered__message--ai">
+            <div class="ai-powered__message-icon">
+              <img src="assets/images/star.png" alt="AI">
+            </div>
+            <div class="ai-powered__message-text" data-text="Hey Mark – Done—compiled 60 leads and emailed the list to you. Ready for your outreach!"></div>
+          </div>
+
+          <div class="ai-powered__message ai-powered__message--user">
+            <div class="ai-powered__message-icon">
+              <img src="assets/images/user-icon.png" alt="User">
+            </div>
+            <div class="ai-powered__message-text" data-text="That's awesome, thanks!"></div>
+          </div>
+
+          <div class="ai-powered__message ai-powered__message--ai">
+            <div class="ai-powered__message-icon">
+              <img src="assets/images/star.png" alt="AI">
+            </div>
+            <div class="ai-powered__message-text" data-text="Want me to draft a quick template for your outreach?"></div>
+          </div>
+
+          <div class="ai-powered__message ai-powered__message--user">
+            <div class="ai-powered__message-icon">
+              <img src="assets/images/user-icon.png" alt="User">
+            </div>
+            <div class="ai-powered__message-text" data-text="Yes please—that’d be a huge help!"></div>
+          </div>
+        </div>
+
+        <div class="ai-powered__input">
+          <div class="chatbox__container">
+            <div class="chatbox__border"></div>
+
+            <!-- Main content wrapper -->
+            <div class="chatbox__content">
+              
+              <div class="chatbox__header">
+                <button class="chatbox__model-select">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_585_3771)">
+                    <path d="M7.65845 11.6425V5.64247L12.3209 2.9508C14.9043 1.45914 19.5293 5.1383 17.5876 8.50497" stroke="white" stroke-linejoin="round"></path>
+                    <path d="M7.65845 8.72656L12.8543 5.72656L17.5168 8.41823C20.1001 9.9099 19.2251 15.7557 15.3376 15.7557" stroke="white" stroke-linejoin="round"></path>
+                    <path d="M10.1833 7.26562L15.3792 10.2656V15.6531C15.3792 18.6365 9.87917 20.8031 7.9375 17.4365" stroke="white" stroke-linejoin="round"></path>
+                    <path d="M12.7083 8.83594V14.7276L8.04581 17.4193C5.46248 18.9109 0.837481 15.2318 2.77915 11.8651" stroke="white" stroke-linejoin="round"></path>
+                    <path d="M12.7084 11.6385L7.51258 14.6385L2.85008 11.9469C0.262576 10.451 1.13758 4.60938 5.02508 4.60938" stroke="white" stroke-linejoin="round"></path>
+                    <path d="M10.1834 13.1021L4.98755 10.1021V4.7146C4.98755 1.73127 10.4875 -0.435396 12.4292 2.93127" stroke="white" stroke-linejoin="round"></path>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_585_3771">
+                    <rect width="20" height="20" fill="white"></rect>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="chatbox__model-name">GPT 4.5</span>
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_589_3845)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.53026 11.7822C9.38962 11.9228 9.19889 12.0018 9.00001 12.0018C8.80114 12.0018 8.61041 11.9228 8.46976 11.7822L4.22701 7.53947C4.15538 7.47028 4.09824 7.38752 4.05894 7.29602C4.01963 7.20452 3.99894 7.1061 3.99808 7.00652C3.99721 6.90693 4.01619 6.80817 4.0539 6.716C4.09161 6.62383 4.1473 6.54009 4.21772 6.46967C4.28814 6.39925 4.37188 6.34356 4.46405 6.30585C4.55622 6.26814 4.65498 6.24916 4.75456 6.25003C4.85415 6.25089 4.95256 6.27158 5.04407 6.31089C5.13557 6.3502 5.21833 6.40733 5.28751 6.47897L9.00001 10.1915L12.7125 6.47897C12.854 6.34235 13.0434 6.26675 13.2401 6.26846C13.4367 6.27017 13.6248 6.34905 13.7639 6.4881C13.9029 6.62716 13.9818 6.81527 13.9835 7.01192C13.9852 7.20856 13.9096 7.39801 13.773 7.53947L9.53026 11.7822Z" fill="white"></path>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_589_3845">
+                    <rect width="18" height="18" fill="white"></rect>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+                <button class="chatbox__language-select">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_587_3840)">
+                    <path d="M1.25 10C1.25 12.3206 2.17187 14.5462 3.81282 16.1872C5.45376 17.8281 7.67936 18.75 10 18.75C12.3206 18.75 14.5462 17.8281 16.1872 16.1872C17.8281 14.5462 18.75 12.3206 18.75 10C18.75 7.67936 17.8281 5.45376 16.1872 3.81282C14.5462 2.17187 12.3206 1.25 10 1.25C7.67936 1.25 5.45376 2.17187 3.81282 3.81282C2.17187 5.45376 1.25 7.67936 1.25 10Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"></path>
+                    <path d="M6.25 10C6.25 7.67936 6.64509 5.45376 7.34835 3.81282C8.05161 2.17187 9.00544 1.25 10 1.25C10.9946 1.25 11.9484 2.17187 12.6516 3.81282C13.3549 5.45376 13.75 7.67936 13.75 10C13.75 12.3206 13.3549 14.5462 12.6516 16.1872C11.9484 17.8281 10.9946 18.75 10 18.75C9.00544 18.75 8.05161 17.8281 7.34835 16.1872C6.64509 14.5462 6.25 12.3206 6.25 10Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"></path>
+                    <path d="M1.875 12.9193H18.125M1.875 7.08594H18.125" stroke="white" stroke-width="1.5" stroke-linecap="round"></path>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_587_3840">
+                    <rect width="20" height="20" fill="white"></rect>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                </button>
+              </div>
+
+              <div class="chatbox__body">
+                <div class="typewriter">
+                  <div class="typewriter__wrapper">
+                    <span class="typewriter__text"></span>
+                    <span class="typewriter__cursor" aria-hidden="true"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="chatbox__footer">
+                <div class="chatbox__actions">
+                  <button class="chatbox__button">Chat</button>
+                  <button class="chatbox__button">Launch Workflow</button>
+                  <button class="chatbox__button">Data Analysis</button>
+                </div>
+                <button class="chatbox__send-btn">
+                  <div class="site-cta__framer-1"></div>
+                  <div class="site-cta__framer-2"></div>
+                  <div class="site-cta__framer-3"></div>
+                  <div class="site-cta__framer-4"></div>
+                  <span class="chatbox__send-icon"><img src="assets/images/star.png" class="img-fluid"></span>
+                  <span class="chatbox__send-text">Send</span>
+                </button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bottom Feature Icons -->
+    <div class="ai-powered__features">
+      <div class="ai-powered__feature-item">
+        <div class="ai-powered__feature-icon">
+          <img src="assets/images/customer-support-icon.png" alt="Customer Support">
+        </div>
+        <h3 class="ai-powered__feature-title">Customer Support</h3>
+      </div>
+
+      <div class="ai-powered__feature-item">
+        <div class="ai-powered__feature-icon">
+          <img src="assets/images/healthcare-icon.png" alt="Healthcare">
+        </div>
+        <h3 class="ai-powered__feature-title">Healthcare</h3>
+      </div>
+
+      <div class="ai-powered__feature-item">
+        <div class="ai-powered__feature-icon">
+          <img src="assets/images/marketing-icon.png" alt="Marketing">
+        </div>
+        <h3 class="ai-powered__feature-title">Marketing</h3>
+      </div>
+
+      <div class="ai-powered__feature-item">
+        <div class="ai-powered__feature-icon">
+          <img src="assets/images/education-icon.png" alt="Education">
+        </div>
+        <h3 class="ai-powered__feature-title">Education</h3>
+      </div>
+
+      <div class="ai-powered__feature-item">
+        <div class="ai-powered__feature-icon">
+          <img src="assets/images/finance-icon.png" alt="Finance">
+        </div>
+        <h3 class="ai-powered__feature-title">Finance</h3>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- ===== AI-Driven Features Section ===== -->
+
+<section class="ai-features">
+  <div class="container">
+    <div class="section-title">
+      <div class="section-title__sub">
+        <div class="section-title__subin">
+          <span>AI-Driven Features</span>
+        </div>
+      </div>
+      <div class="section-title__main">
+        <h2>Build, scale and manage <br> entire AI workforce</h2>
+      </div>
+      <div class="section-title__content">
+        <p>Fluence AI helps you tackle data bottlenecks, streamline analysis, and make <br> smarter decisions with ease.</p>
+      </div>
+    </div>
+
+    <section class="ai-features__scroll">
+
+      <div class="ai-features__card">
+        <div class="ai-features__card-content">
+          <h3 class="ai-features__card-title">Instant, One-Command Actions</h3>
+          <p class="ai-features__card-desc">
+            Type an action once—Fusion AI executes it across Slack, WhatsApp, HubSpot, Calendar, and more.
+          </p>
+          <ul class="ai-features__card-list">
+            <li class="ai-features__card-list-item">
+              <span><img src="assets/images/star.png" alt="icon"></span> Draft & send multi-channel messages
+            </li>
+            <li class="ai-features__card-list-item">
+              <span><img src="assets/images/star.png" alt="icon"></span> Create CRM contacts on the fly
+            </li>
+            <li class="ai-features__card-list-item">
+              <span><img src="assets/images/star.png" alt="icon"></span> Cancel meetings or raise issues instantly
+            </li>
+          </ul>
+        </div>
+        <div class="ai-features__card-image">
+          <img src="assets/images/instant-one-command-actions.png" alt="AI Actions" />
+        </div>
+      </div>
+
+      <div class="ai-features__card">
+        <div class="ai-features__card-image">
+          <img src="assets/images/no-code-workflow-builder.png" alt="Workflow Builder" />
+        </div>
+        <div class="ai-features__card-content">
+          <h3 class="ai-features__card-title">No-Code Workflow Builder</h3>
+          <p class="ai-features__card-desc">
+            Design complex, multi-step automations with drag-and-drop ease—no coding required.
+          </p>
+          <ul class="ai-features__card-list">
+            <li class="ai-features__card-list-item">
+              <span><img src="assets/images/star.png" alt="icon"></span> Visual workflow canvas
+            </li>
+            <li class="ai-features__card-list-item">
+              <span><img src="assets/images/star.png" alt="icon"></span> Pre-built action blocks
+            </li>
+            <li class="ai-features__card-list-item">
+              <span><img src="assets/images/star.png" alt="icon"></span> Conditional logic & branching
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ai-features__card">
+        <div class="ai-features__card-content">
+          <h3 class="ai-features__card-title">Instant, One-Command Actions</h3>
+          <p class="ai-features__card-desc">
+            Type an action once—Fusion AI executes it across Slack, WhatsApp, HubSpot, Calendar, and more.
+          </p>
+          <ul class="ai-features__card-list">
+            <li class="ai-features__card-list-item">
+              <span><img src="assets/images/star.png" alt="icon"></span> Draft & send multi-channel messages
+            </li>
+            <li class="ai-features__card-list-item">
+              <span><img src="assets/images/star.png" alt="icon"></span> Create CRM contacts on the fly
+            </li>
+            <li class="ai-features__card-list-item">
+              <span><img src="assets/images/star.png" alt="icon"></span> Cancel meetings or raise issues instantly
+            </li>
+          </ul>
+        </div>
+        <div class="ai-features__card-image">
+          <img src="assets/images/instant-one-command-actions.png" alt="AI Actions" />
+        </div>
+      </div>
+
+    </section>
+ 
+  </div>
+</section>
+
+
+
+<!-- =====  Product Features Section ===== -->
+
+<section class="product-features">
+  <div class="container">
+
+    <div class="section-title">
+      <div class="section-title__sub">
+        <div class="section-title__subin">
+          <span>PRODUCT FEATURES</span>
+        </div>
+      </div>
+      <div class="section-title__main">
+        <h2>Build Workflows, Track Insights, <br> Connect Tools</h2>
+      </div>
+    </div>
+
+    <div class="product-features__content">
+    
+      <div class="product-features__left">
+        <div class="product-features__slider">
+          <div class="product-features__slide">
+            <img src="assets/images/workflow-dashboard.png" alt="Workflow 1" class="product-features__image">
+          </div>
+          <div class="product-features__slide">
+            <img src="assets/images/analytics-dashboard.png" alt="Workflow 2" class="product-features__image">
+          </div>
+          <div class="product-features__slide">
+            <img src="assets/images/integration-dashboard.png" alt="Workflow 3" class="product-features__image">
+          </div>
+        </div>
+      </div>
+
+      <div class="product-features__right">
+        <div class="product-features__text">
+          <p class="product-features__description">
+            <strong>Workflow:</strong> Drag-and-drop multi-step automations with triggers, AI actions, and rules—built visually in minutes.
+          </p>
+          <p class="product-features__description">
+            <strong>Analytics:</strong> Real-time dashboards surface trends, bottlenecks, and ROI at a glance—for faster decisions.
+          </p>
+          <p class="product-features__description">
+            <strong>Integration:</strong> One-click connectors and an open API sync CRM, chat, calendar, and more—everything stays in sync.
+          </p>
+        </div>
+      </div>
+  
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =====  Powerful Integrations Section ===== -->
+
+<section class="integrations">
+  <div class="ai-integrations">
+    <img src="assets/images/ai-round.png">
+  </div>
+  <div class="container">
+
+    <div class="section-title">
+      <div class="section-title__sub">
+        <div class="section-title__subin">
+          <span>POWERFUL INTEGRATIONS</span>
+        </div>
+      </div>
+      <div class="section-title__main">
+        <h2> Seamlessly Integrate <br> Every App</h2>
+      </div>
+    </div>
+
+    <div class="integrations__grid">
+      <!-- Row 1 -->
+      <ul class="integrations__icon-list integrations__icon-list--row1">
+        <li class="integrations__icon-item">
+          <img src="assets/images/whatsapp-icon.svg" alt="Whatsapp" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/chatgpt-icon.svg" alt="ChatGPT" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/zapier-icon.svg" alt="Zapier" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/slack-new.svg" alt="Slack" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/notion-icon.svg" alt="Notion" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/salesforce-icon.svg" alt="Salesforce" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/whatsapp-icon.svg" alt="Whatsapp" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/chatgpt-icon.svg" alt="ChatGPT" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/zapier-icon.svg" alt="Zapier" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/slack-new.svg" alt="Slack" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/notion-icon.svg" alt="Notion" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/salesforce-icon.svg" alt="Salesforce" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/whatsapp-icon.svg" alt="Whatsapp" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/chatgpt-icon.svg" alt="ChatGPT" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/zapier-icon.svg" alt="Zapier" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/slack-new.svg" alt="Slack" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/notion-icon.svg" alt="Notion" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/salesforce-icon.svg" alt="Salesforce" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/whatsapp-icon.svg" alt="Whatsapp" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/chatgpt-icon.svg" alt="ChatGPT" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/zapier-icon.svg" alt="Zapier" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/slack-new.svg" alt="Slack" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/notion-icon.svg" alt="Notion" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/salesforce-icon.svg" alt="Salesforce" class="integrations__icon-image" />
+        </li>
+      </ul>
+
+      <!-- Row 2 -->
+      <ul class="integrations__icon-list integrations__icon-list--row2">
+        <li class="integrations__icon-item">
+          <img src="assets/images/google-calendar.svg" alt="Google Calendar" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/microsoft-icon.svg" alt="Microsoft" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/power-bi-icon.svg" alt="Power BI" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/microsoft-office-icon.svg" alt="Microsoft Office" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/microsoft-edge-icon.svg" alt="Microsoft Edge" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/meta-icon.png" alt="Meta" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/figma-icon.svg" alt="Figma" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/google-calendar.svg" alt="Google Calendar" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/microsoft-icon.svg" alt="Microsoft" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/power-bi-icon.svg" alt="Power BI" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/microsoft-office-icon.svg" alt="Microsoft Office" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/microsoft-edge-icon.svg" alt="Microsoft Edge" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/meta-icon.png" alt="Meta" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/figma-icon.svg" alt="Figma" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/google-calendar.svg" alt="Google Calendar" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/microsoft-icon.svg" alt="Microsoft" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/power-bi-icon.svg" alt="Power BI" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/microsoft-office-icon.svg" alt="Microsoft Office" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/microsoft-edge-icon.svg" alt="Microsoft Edge" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/meta-icon.png" alt="Meta" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/figma-icon.svg" alt="Figma" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/google-calendar.svg" alt="Google Calendar" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/microsoft-icon.svg" alt="Microsoft" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/power-bi-icon.svg" alt="Power BI" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/microsoft-office-icon.svg" alt="Microsoft Office" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/microsoft-edge-icon.svg" alt="Microsoft Edge" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/meta-icon.png" alt="Meta" class="integrations__icon-image" />
+        </li>
+        <li class="integrations__icon-item">
+          <img src="assets/images/figma-icon.svg" alt="Figma" class="integrations__icon-image" />
+        </li>
+      </ul>
+    </div>
+
+    <div class="section-cta">
+      <div class="site-cta">  
+        <a href="#" class="site-cta__ghost">
+          <div class="site-cta__started">
+            <div class="site-cta__item">
+              Explore All 
+            </div>
+            <div class="site-cta__item">
+              Explore All
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ===== Success Stories Section ===== -->
+
+<section class="testimonials">
+  <div class="testimonials-shape">
+    <img src="assets/images/success-stories-image.png" alt="">
+  </div>
+  <div class="container">
+    
+    <div class="section-title">
+      <div class="section-title__sub">
+        <div class="section-title__subin">
+          <span>SUCCESS STORIES</span>
+        </div>
+      </div>
+      <div class="section-title__main">
+        <h2>Hear from our customers <br> & their success stories</h2>
+      </div>
+    </div>
+
+    <div class="testimonials__grid">
+      <!-- Card 1 -->
+      <article class="testimonials__card">
+        <div class="testimonials__card-logo">
+          <img src="assets/images/logoipsum-logo.svg" alt="Logoipsum">
+        </div>
+        <p class="testimonials__card-quote">
+          “Seamless Slack and Salesforce integrations keep our team in sync. 
+          Fusion AI ensures everyone’s on the same page.”
+        </p>
+        <div class="testimonials__card-user">
+          <img src="assets/images/logoipsum-user.png" alt="Priya Desai" class="testimonials__card-avatar">
+          <div class="testimonials__card-info">
+            <h4 class="testimonials__card-name">Priya Desai</h4>
+            <p class="testimonials__card-role">Customer Success Manager</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="testimonials__card testimonials__card--gradient-orange">
+        <div class="testimonials__card-logo">
+          <img src="assets/images/venture-logo.svg" alt="Venture">
+        </div>
+        <p class="testimonials__card-quote">
+          “Seamless Slack and Salesforce integrations keep our team in sync. 
+          Fusion AI ensures everyone’s on the same page.”
+        </p>
+        <div class="testimonials__card-user">
+          <img src="assets/images/venture-user.png" alt="Mat Mursmark" class="testimonials__card-avatar">
+          <div class="testimonials__card-info">
+            <h4 class="testimonials__card-name">Mat Mursmark</h4>
+            <p class="testimonials__card-role">Chief Growth Officer</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="testimonials__card testimonials__card--gradient-red">
+        <div class="testimonials__card-logo">
+          <img src="assets/images/application-logo.svg" alt="Application">
+        </div>
+        <p class="testimonials__card-quote">
+          “Fusion AI cut our onboarding time by <strong>50%</strong>—setup was effortless, 
+          and our AI agents are now core <br> to daily ops.”
+        </p>
+        <div class="testimonials__card-user">
+          <img src="assets/images/application-use.png" alt="Chris Milkulin" class="testimonials__card-avatar">
+          <div class="testimonials__card-info">
+            <h4 class="testimonials__card-name">Chris Milkulin</h4>
+            <p class="testimonials__card-role">Performance Marketer</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="testimonials__card testimonials__card--gradient-red">
+        <div class="testimonials__card-logo">
+          <img src="assets/images/startup-logo.svg" alt="Startup">
+        </div>
+        <p class="testimonials__card-quote">
+          “Automating lead follow‑ups boosted our conversion rate by 30% without adding headcount. Fusion AI is a <br> game‑changer.”
+        </p>
+        <div class="testimonials__card-user">
+          <img src="assets/images/startup-user.png" alt="Audrey Madden" class="testimonials__card-avatar">
+          <div class="testimonials__card-info">
+            <h4 class="testimonials__card-name">Audrey Madden</h4>
+            <p class="testimonials__card-role">Chief Growth Officer</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== AI-Driven Features Automate workflows Section ===== -->
+
+<section class="ai-workflow">
+  <div class="container">
+    <div class="section-title">
+      <div class="section-title__sub">
+        <div class="section-title__subin">
+          <span>AI-Driven Features</span>
+        </div>
+      </div>
+      <div class="section-title__main">
+        <h2>Automate workflows in <br> three simple steps</h2>
+      </div>
+    </div>
+
+    <div class="ai-workflow__steps">
+
+      <!-- Step 1 -->
+      <div class="ai-workflow__step ai-workflow__step--trigger">
+        <div class="ai-workflow__image">
+          <img src="assets/images/select-trigger.png" alt="Select a trigger" />
+          <!-- <div class="ai-workflow__trigger">
+            <div class="ai-workflow__trigger-event">⚡ When this happen</div>
+            <div class="ai-workflow__trigger-action">💬 Do this</div>
+          </div> -->
+        </div>
+        <h3 class="ai-workflow__step-title">1. Select a trigger</h3>
+        <p class="ai-workflow__step-description">
+          Choose an event or schedule that kicks off your workflow.
+        </p>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="ai-workflow__step ai-workflow__step--connect">
+        <div class="ai-workflow__image">
+          <img src="assets/images/connect-your-apps.png" alt="Connect your apps" />
+          <div class="ai-workflow__apps">
+            
+            <ul class="integrations__icon-list integrations__icon-list--row1">
+              <li class="integrations__icon-item">
+                <img src="assets/images/whatsapp-icon.svg" alt="Whatsapp" class="integrations__icon-image">
+              </li>
+              <li class="integrations__icon-item">
+                <img src="assets/images/chatgpt-icon.svg" alt="ChatGPT" class="integrations__icon-image">
+              </li>
+              <li class="integrations__icon-item">
+                <img src="assets/images/zapier-icon.svg" alt="Zapier" class="integrations__icon-image">
+              </li>
+              <li class="integrations__icon-item">
+                <img src="assets/images/slack-new.svg" alt="Slack" class="integrations__icon-image">
+              </li>
+              <li class="integrations__icon-item">
+                <img src="assets/images/notion-icon.svg" alt="Notion" class="integrations__icon-image">
+              </li>
+              <li class="integrations__icon-item">
+                <img src="assets/images/salesforce-icon.svg" alt="Salesforce" class="integrations__icon-image">
+              </li>
+              <li class="integrations__icon-item">
+                <img src="assets/images/whatsapp-icon.svg" alt="Whatsapp" class="integrations__icon-image">
+              </li>
+              <li class="integrations__icon-item">
+                <img src="assets/images/chatgpt-icon.svg" alt="ChatGPT" class="integrations__icon-image">
+              </li>
+              <li class="integrations__icon-item">
+                <img src="assets/images/zapier-icon.svg" alt="Zapier" class="integrations__icon-image">
+              </li>
+              <li class="integrations__icon-item">
+                <img src="assets/images/slack-new.svg" alt="Slack" class="integrations__icon-image">
+              </li>
+              <li class="integrations__icon-item">
+                <img src="assets/images/notion-icon.svg" alt="Notion" class="integrations__icon-image">
+              </li>
+              <li class="integrations__icon-item">
+                <img src="assets/images/salesforce-icon.svg" alt="Salesforce" class="integrations__icon-image">
+              </li>
+            </ul>
+
+            <ul class="integrations__icon-list integrations__icon-list--row2">
+              <li class="integrations__icon-item">
+                <img src="assets/images/google-calendar.svg" alt="Google Calendar" class="integrations__icon-image">
+              </li>
+              <li class="integrations__icon-item">
+                <img src="assets/images/microsoft-icon.svg" alt="Microsoft" class="integrations__icon-image">
+              </li>
+              <li class="integrations__icon-item">
+                <img src="assets/images/power-bi-icon.svg" alt="Power BI" class="integrations__icon-image">
+              </li>
+              <li class="integrations__icon-item">
+                <img src="assets/images/microsoft-office-icon.svg" alt="Microsoft Office" class="integrations__icon-image">
+              </li>
+              <li class="integrations__icon-item">
+                <img src="assets/images/microsoft-edge-icon.svg" alt="Microsoft Edge" class="integrations__icon-image">
+              </li>
+              <li class="integrations__icon-item">
+                <img src="assets/images/meta-icon.png" alt="Meta" class="integrations__icon-image">
+              </li>
+              <li class="integrations__icon-item">
+                <img src="assets/images/figma-icon.svg" alt="Figma" class="integrations__icon-image">
+              </li>
+              <li class="integrations__icon-item">
+                <img src="assets/images/google-calendar.svg" alt="Google Calendar" class="integrations__icon-image">
+              </li>
+              <li class="integrations__icon-item">
+                <img src="assets/images/microsoft-icon.svg" alt="Microsoft" class="integrations__icon-image">
+              </li>
+              <li class="integrations__icon-item">
+                <img src="assets/images/power-bi-icon.svg" alt="Power BI" class="integrations__icon-image">
+              </li>
+              <li class="integrations__icon-item">
+                <img src="assets/images/microsoft-office-icon.svg" alt="Microsoft Office" class="integrations__icon-image">
+              </li>
+              <li class="integrations__icon-item">
+                <img src="assets/images/microsoft-edge-icon.svg" alt="Microsoft Edge" class="integrations__icon-image">
+              </li>
+              <li class="integrations__icon-item">
+                <img src="assets/images/meta-icon.png" alt="Meta" class="integrations__icon-image">
+              </li>
+              <li class="integrations__icon-item">
+                <img src="assets/images/figma-icon.svg" alt="Figma" class="integrations__icon-image">
+              </li>
+            </ul>
+
+          </div>
+        </div>
+        <h3 class="ai-workflow__step-title">2. Connect your apps</h3>
+        <p class="ai-workflow__step-description">
+          Sync Fusion AI with your tools—CRM, email, Slack, and more.
+        </p>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="ai-workflow__step ai-workflow__step--automation">
+        <div class="ai-workflow__image">
+          <img src="assets/images/let-ai-work.png" alt="Let AI do the work" />
+          <!-- <div class="ai-workflow__icon">
+            <img src="check-icon.svg" alt="Automation Complete" />
+          </div> -->
+        </div>
+        <h3 class="ai-workflow__step-title">3. Let AI do the work</h3>
+        <p class="ai-workflow__step-description">
+          Lets Fusion AI execute tasks automatically.
+        </p>
+      </div>
+
+    </div>
+  </div>  
+</section>
+
+
+
+<!-- ===== FAQ Section ===== -->
+
+<section class="ai-faq">
+  <div class="container">
+    <div class="ai-faq__inner">
+      <!-- Left Content -->
+      <div class="ai-faq__content">
+        <div class="section-title">
+          <div class="section-title__sub">
+            <div class="section-title__subin">
+              <span>FAQ</span>
+            </div>
+          </div>
+          <div class="section-title__main">
+            <h2>Frequently <br> asked <br> questions</h2>
+          </div>
+          <div class="section-title__content">
+            <p> <strong>Got any Questions?</strong> <br> Let us know! Reach out and our team will get right back to you.</p>
+          </div>
+        </div>
+        <div class="section-cta">
+          <div class="site-cta">  
+            <a href="#" class="site-cta__ghost">
+              <div class="site-cta__started">
+                <div class="site-cta__item">
+                  Contact us 
+                </div>
+                <div class="site-cta__item">
+                  Contact us
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Accordion -->
+      <div class="ai-faq__accordion">
+        <div class="ai-faq__item">
+          <button class="ai-faq__question">
+            What is FusionAI and how does it work?
+            <span class="ai-faq__icon"></span>
+          </button>
+          <div class="ai-faq__answer">
+            Fluence AI is a powerful platform designed to help businesses integrate, analyze, and automate data workflows using artificial intelligence. It empowers teams to make smarter decisions and drive growth through seamless data management.
+          </div>
+        </div>
+
+        <div class="ai-faq__item ai-faq__item--active">
+          <button class="ai-faq__question">
+            Which apps can I integrate?
+            <span class="ai-faq__icon"></span>
+          </button>
+          <div class="ai-faq__answer">
+            Fusion AI supports 50+ integrations, including Slack, HubSpot, Zendesk,
+            Salesforce, Google Workspace, WhatsApp, Zapier, and more.
+          </div>
+        </div>
+
+        <div class="ai-faq__item">
+          <button class="ai-faq__question">
+            How does Fluence AI automate tasks?
+            <span class="ai-faq__icon"></span>
+          </button>
+          <div class="ai-faq__answer">
+            Fluence AI uses AI-driven workflows to automate repetitive tasks such as data processing, reporting, and notifications. This helps save time and boosts productivity for your team.
+          </div>
+        </div>
+
+        <div class="ai-faq__item">
+          <button class="ai-faq__question">
+            Is my data secure with Fluence AI?
+            <span class="ai-faq__icon"></span>
+          </button>
+          <div class="ai-faq__answer">
+            Absolutely! Fluence AI takes security seriously. We use enterprise-grade encryption to protect your data, ensuring that it's secure at all stages, from integration to processing.
+          </div>
+        </div>
+
+        <div class="ai-faq__item">
+          <button class="ai-faq__question">
+            What kind of support do you offer?
+            <span class="ai-faq__icon"></span>
+          </button>
+          <div class="ai-faq__answer">
+            We offer 24/7 support via email for all users, with additional live chat and priority support for Plus and Pro plan subscribers. Our team is always ready to assist with any questions or issues you may have.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</section>
+
+
+
+<!-- ===== Start Your AI Automation Journey Today Section ===== -->
+
+<section class="start-journey">
+  <div class="container">
+    <div class="start-journey__icon">
+      <img src="assets/images/ai-round.png" alt="AI Icon">
+    </div>
+    <div class="section-title">
+      <div class="section-title__main">
+        <h2>Start Your AI Automation <br> Journey Today</h2>
+      </div>
+      <div class="section-title__content">
+        <p>Sign up for Fusion AI and let AI handle your routine tasks—no credit card needed.</p>
+      </div>
+    </div>
+    <div class="section-cta">
+      <div class="site-cta">
+        <a href="#">
+          <div class="site-cta__framer-1"></div>
+          <div class="site-cta__framer-2"></div>
+          <div class="site-cta__framer-3"></div>
+          <div class="site-cta__framer-4"></div>
+          <div class="site-cta__started">
+            <div class="site-cta__item">
+              Get Started - Free 
+            </div>
+            <div class="site-cta__item">
+              Get Started - Free
+            </div>
+          </div>
+        </a>
+        <a href="#" class="site-cta__ghost">
+          <div class="site-cta__started">
+            <div class="site-cta__item">
+              View Pricing 
+            </div>
+            <div class="site-cta__item">
+              View Pricing
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>    
+</section>
+
+
+
+<!-- ===== Footer Section ===== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer_box">
+      <div class="footer__inner">
+
+        <!-- Left: Brand Section -->
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <a class="site-header__brand" href="#">
+              <img src="assets/images/ai-round.png" alt="logo" class="img-fluid">
+              <strong>Fusion AI</strong>
+            </a>
+          </div>
+          <p class="footer__description">
+            Fusion AI and let AI handle your routine tasks.
+          </p>
+        </div>
+
+        <!-- Middle: Navigation Links -->
+        <div class="footer__links">
+          <div class="footer__column">
+            <h4 class="footer__column-title">Main Page</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Home</a></li>
+              <li><a href="#" class="footer__link">About</a></li>
+              <li><a href="#" class="footer__link">Pricing</a></li>
+              <li><a href="#" class="footer__link">Blogs</a></li>
+              <li><a href="#" class="footer__link">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h4 class="footer__column-title">Quick Links</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Integration</a></li>
+              <li><a href="#" class="footer__link">Teams</a></li>
+              <li><a href="#" class="footer__link">Career</a></li>
+              <li><a href="#" class="footer__link">FAQ</a></li>
+              <li><a href="#" class="footer__link">404</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__column">
+            <h4 class="footer__column-title">Others</h4>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Privacy Policy</a></li>
+              <li><a href="#" class="footer__link">Terms & Condition</a></li>
+              <li><a href="#" class="footer__link">Waitlist</a></li>
+              <li><a href="#" class="footer__link">Changelog</a></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Section -->
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © 2025 Design & Developed by Amani Design
+        </p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-icon">
+            <svg fill="#fff" width="24px" height="24px" viewBox="0 0 0.72 0.72" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="M0.52 0.164a0.036 0.036 0 1 0 0.036 0.036 0.036 0.036 0 0 0 -0.036 -0.036m0.138 0.073a0.228 0.228 0 0 0 -0.014 -0.073 0.147 0.147 0 0 0 -0.035 -0.053 0.141 0.141 0 0 0 -0.053 -0.034 0.219 0.219 0 0 0 -0.073 -0.014C0.452 0.06 0.442 0.06 0.36 0.06s-0.092 0 -0.124 0.002a0.219 0.219 0 0 0 -0.073 0.014 0.144 0.144 0 0 0 -0.053 0.034 0.141 0.141 0 0 0 -0.034 0.053 0.219 0.219 0 0 0 -0.014 0.073C0.06 0.268 0.06 0.278 0.06 0.36s0 0.092 0.002 0.124a0.219 0.219 0 0 0 0.014 0.073 0.141 0.141 0 0 0 0.034 0.053 0.144 0.144 0 0 0 0.053 0.034 0.219 0.219 0 0 0 0.073 0.014C0.268 0.66 0.278 0.66 0.36 0.66s0.092 0 0.124 -0.002a0.219 0.219 0 0 0 0.073 -0.014 0.141 0.141 0 0 0 0.053 -0.034 0.145 0.145 0 0 0 0.035 -0.053 0.228 0.228 0 0 0 0.014 -0.073c0 -0.032 0.002 -0.042 0.002 -0.124s0 -0.092 -0.002 -0.124M0.604 0.48a0.168 0.168 0 0 1 -0.01 0.056 0.092 0.092 0 0 1 -0.022 0.034 0.096 0.096 0 0 1 -0.034 0.022 0.168 0.168 0 0 1 -0.056 0.01c-0.03 0.002 -0.041 0.002 -0.12 0.002s-0.09 0 -0.12 -0.002a0.171 0.171 0 0 1 -0.058 -0.009 0.099 0.099 0 0 1 -0.033 -0.022 0.09 0.09 0 0 1 -0.022 -0.034 0.165 0.165 0 0 1 -0.012 -0.057c0 -0.03 -0.002 -0.041 -0.002 -0.12s0 -0.09 0.002 -0.12a0.165 0.165 0 0 1 0.01 -0.057A0.09 0.09 0 0 1 0.15 0.15a0.093 0.093 0 0 1 0.033 -0.024A0.171 0.171 0 0 1 0.24 0.116c0.03 0 0.041 -0.002 0.12 -0.002s0.09 0 0.12 0.002a0.168 0.168 0 0 1 0.056 0.01 0.092 0.092 0 0 1 0.036 0.024 0.093 0.093 0 0 1 0.022 0.033 0.168 0.168 0 0 1 0.01 0.057c0.002 0.03 0.002 0.041 0.002 0.12s0 0.09 -0.002 0.12M0.36 0.206A0.154 0.154 0 1 0 0.514 0.36 0.154 0.154 0 0 0 0.36 0.206m0 0.254A0.1 0.1 0 1 1 0.46 0.36 0.1 0.1 0 0 1 0.36 0.46"/></svg>
+          </a>
+          <a href="#" class="footer__social-icon">
+            <svg fill="#fff" width="24px" height="24px" viewBox="0 0 1.44 1.44" version="1.1" id="Shopicons" xmlns="http://www.w3.org/2000/svg" x="0" y="0" xml:space="preserve"><style>.st1{fill:#fff}.st2,.st3{fill:none;stroke:#666;stroke-width:4;stroke-miterlimit:10}.st3{stroke-width:6}</style><g id="facebook_00000008112799362506850770000006163283146650373774_"><path d="M0 0h1.44v1.44H0z" fill="none"/><path d="M0.72 0.12C0.389 0.12 0.12 0.389 0.12 0.72s0.269 0.6 0.6 0.6 0.6 -0.269 0.6 -0.6S1.051 0.12 0.72 0.12m0.06 1.076V0.84h0.15v-0.12h-0.15v-0.09c0 -0.033 0.027 -0.06 0.06 -0.06h0.09v-0.12h-0.09c-0.099 0 -0.18 0.081 -0.18 0.18v0.09h-0.15v0.12h0.15v0.356C0.424 1.166 0.24 0.964 0.24 0.72c0 -0.265 0.215 -0.48 0.48 -0.48s0.48 0.215 0.48 0.48c0 0.244 -0.184 0.446 -0.42 0.476"/></g></svg>
+          </a>
+          <a href="#" class="footer__social-icon">
+            <svg fill="#fff" width="24px" height="24px" viewBox="0 0 0.72 0.72" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="m0.634 0.135 0.042 0.005 -0.019 0.038 -0.028 0.056a0.045 0.045 0 0 1 -0.006 0.012c-0.001 0.002 -0.005 0.008 -0.005 0.008a0.06 0.06 0 0 0 -0.002 0.004v0.072c0 0.183 -0.177 0.3 -0.345 0.3 -0.034 0 -0.06 -0.002 -0.09 -0.008 -0.049 -0.011 -0.086 -0.032 -0.102 -0.069l-0.017 -0.038 0.042 -0.004c0.038 -0.003 0.071 -0.011 0.096 -0.02 -0.069 -0.011 -0.108 -0.041 -0.108 -0.099v-0.03h0.03q0.01 0 0.018 -0.002C0.086 0.329 0.06 0.279 0.06 0.21v-0.006c0 -0.035 0.002 -0.053 0.011 -0.077 0.006 -0.015 0.015 -0.029 0.027 -0.042L0.121 0.06l0.022 0.025c0.073 0.083 0.144 0.133 0.217 0.139 0 -0.076 0.058 -0.134 0.135 -0.134 0.036 0 0.068 0.014 0.094 0.038q0.021 0.004 0.045 0.007m-0.066 0.05 -0.009 -0.002 -0.006 -0.007c-0.015 -0.017 -0.035 -0.026 -0.057 -0.026 -0.044 0 -0.075 0.031 -0.075 0.075 0 0.007 0 0.012 -0.001 0.018 -0.004 0.024 -0.017 0.042 -0.044 0.042 -0.09 0 -0.171 -0.048 -0.25 -0.13 -0.004 0.012 -0.005 0.025 -0.005 0.049l0 0.006c0 0.061 0.025 0.095 0.084 0.114l0.021 0.007v0.022c0 0.027 -0.025 0.052 -0.062 0.063 0.017 0.013 0.051 0.02 0.107 0.02h0.03v0.03c0 0.043 -0.049 0.077 -0.124 0.094 0.024 0.007 0.057 0.011 0.094 0.011 0.138 0 0.285 -0.096 0.285 -0.24v-0.075c0 -0.009 0.003 -0.017 0.007 -0.024 0.002 -0.003 0.003 -0.006 0.006 -0.009l0.003 -0.005 0.002 -0.005 0.012 -0.023a0.51 0.51 0 0 1 -0.018 -0.004"/></svg>
+          </a>
+          <a href="#" class="footer__social-icon">
+            <svg width="24px" height="24px" viewBox="0 0 0.45 0.45" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.135 0.18v0.15m0.18 0V0.255a0.06 0.06 0 1 0 -0.12 0V0.33M0.12 0.135h0.03M0.045 0.015h0.36a0.03 0.03 0 0 1 0.03 0.03v0.36a0.03 0.03 0 0 1 -0.03 0.03h-0.36a0.03 0.03 0 0 1 -0.03 -0.03v-0.36a0.03 0.03 0 0 1 0.03 -0.03Z" stroke="#fff" stroke-width="0.03"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+  
+
+  
+
+
+  <!-- Include jQuery and Slick JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="assets/js/script.js"></script>
+
+</body>
+</html>
