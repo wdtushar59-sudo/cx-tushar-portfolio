@@ -290,6 +290,35 @@ body {
     font-weight: 500;
     color: var(--color-white);
 }
+
+
+.animate-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.animate-up.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+.hero__content .section-title__main h2 span {
+  display: block;
+   opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.hero__content .section-title__main.active span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.hero__content .section-title__main span:nth-child(1) { transition-delay: 0.1s; }
+.hero__content .section-title__main span:nth-child(2) { transition-delay: 0.3s; }
+.hero__content .section-title__main span:nth-child(3) { transition-delay: 0.5s; }
+
+
 .section-title__content p {
     margin: 36px 0 0;
     font-size: 18px;
@@ -1747,6 +1776,8 @@ body {
 .start-journey {
   padding: 100px 0;
   text-align: center;
+  position: relative;
+  z-index: 1;
 }
 .start-journey__icon {
   will-change: transform;
@@ -1777,6 +1808,20 @@ body {
 /* ---------- Footer Section Css Start ---------- */
 .footer {
   padding: 100px 0;
+  position: relative;
+}
+.footer .container {
+  position: relative;
+}
+.footer-shape {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.footer-shape img {
+  width: 100%;
+  margin: 0 0 -7px;
 }
 .footer_box {
   background-color: var(--color-black);
